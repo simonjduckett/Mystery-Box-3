@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mystery Box 3</title>
+		<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript" src="howler.core.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Tajawal:500,800|VT323" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+			font-family: 'VT323';
+			color: white;
+	}
+	a {
+		color: white;
+	}
+	</style>
+</head>
+<body>
+
+<div style='width: 800px; height: 600px; background-color: black;'>
+	<div style="margin-left:100px;">
+		<img style="width: 600px; margin-top:100px;" src="images/mystery.png">
+	</div>
+
+	<p style="width: 100%; text-align: center;">&copy SJD Games</p>
+
+
+
+	<p style="text-align: center;" id="coin">INSERT COIN</p>
+
+		<script type="text/javascript">
+		var coin = document.getElementById('coin');
+
+		window.onload = function(){
+			 setInterval(() => {
+			 	if (coin.style.color == 'white') {
+			 		coin.style.color = 'grey';
+			 	}
+			 	else {
+			 		coin.style.color = 'white';
+			 	}
+			
+
+			 }
+				,1000)
+		}
+	</script>
+
+	<div style="width: 100%; text-align: center; color: yellow; margin-top: 80px;">
+		<h3>Controls</h3>
+		<p>MOVE = < ></p>
+		<p>FIRE = space bar</p>
+	</div>
+
+	
+
+
+	<div style="width: 100%; text-align: center; color: white; margin-top: 50px; font-size: 25px;">
+		<a href="game.html">START GAME</a>
+	</div>
+	
+
+</div>
+
+
+</body>
+</html>
